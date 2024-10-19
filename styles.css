@@ -1,0 +1,137 @@
+/* Global Styles */
+<!-- This website was created by: Cassandra Starzl 10/18/2024 -->
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f2e9dc, #91c499); /* Gradient background */
+}
+
+header {
+    text-align: center;
+    background-color: #595959; /* Dark Gray background */
+    color: #f2e9dc; /* Pale Beige text */
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Shadow under header */
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f2e9dc; /* Pale Beige text for nav links */
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: #808f85; /* Grayish Green for link backgrounds */
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #cfd11a; /* Bright Yellow-Green on hover */
+    color: #595959; /* Dark Gray text on hover */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+    background-color: #f2e9dc; /* Pale Beige background for main content */
+}
+
+.intro {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.intro img {
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Shadow under images */
+}
+
+.featured {
+    margin-top: 20px;
+}
+
+.featured ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.featured ul li {
+    background-color: #91c499; /* Light Green background */
+    color: #f2e9dc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.featured ul li:nth-child(odd) {
+    background-color: #808f85; /* Grayish Green for alternating items */
+}
+
+/* Footer */
+footer {
+    background-color: #595959; /* Dark Gray */
+    color: #f2e9dc; /* Pale Beige text */
+    text-align: center;
+    padding: 10px;
+}
+
+/* Grid Layout for Featured Section */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.grid-item {
+    padding: 20px;
+    background-color: #f2e9dc; /* Pale Beige background for grid items */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Query for Desktop */
+@media screen and (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    section {
+        width: 45%;
+    }
+}
